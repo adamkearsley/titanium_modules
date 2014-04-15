@@ -146,6 +146,11 @@ static zxing::DecodeHints decodeHints;
     }
 }
 
+-(BOOL)shouldAutorotate
+{
+    return NO;
+}
+
 -(void)setUseLED:(id)arg
 {
     led = [TiUtils boolValue:arg def:NO];
